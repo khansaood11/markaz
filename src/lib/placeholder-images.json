@@ -1,0 +1,119 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A beautiful mosque at sunset",
+      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageHint": "mosque sunset"
+    },
+    {
+      "id": "gallery1",
+      "description": "Intricate calligraphy on a mosque wall",
+      "imageUrl": "https://picsum.photos/seed/gallery1/600/600",
+      "imageHint": "islamic calligraphy"
+    },
+    {
+      "id": "gallery2",
+      "description": "Children learning in a classroom at the mosque",
+      "imageUrl": "https://picsum.photos/seed/gallery2/600/600",
+      "imageHint": "children learning"
+    },
+    {
+      "id": "gallery3",
+      "description": "Community members sharing a meal",
+      "imageUrl": "https://picsum.photos/seed/gallery3/600/600",
+      "imageHint": "community meal"
+    },
+    {
+      "id": "gallery4",
+      "description": "Rows of people praying inside the mosque",
+      "imageUrl": "https://picsum.photos/seed/gallery4/600/600",
+      "imageHint": "congregational prayer"
+    },
+    {
+      "id": "gallery5",
+      "description": "A decorative lamp hanging in the mosque",
+      "imageUrl": "https://picsum.photos/seed/gallery5/600/600",
+      "imageHint": "islamic lamp"
+    },
+    {
+      "id": "gallery6",
+      "description": "The minaret of the mosque against a blue sky",
+      "imageUrl": "https://picsum.photos/seed/gallery6/600/600",
+      "imageHint": "mosque minaret"
+    },
+    {
+      "id": "imam1",
+      "description": "Portrait of the Imam",
+      "imageUrl": "https://picsum.photos/seed/imam1/200/200",
+      "imageHint": "muslim scholar"
+    },
+    {
+      "id": "muazzin1",
+      "description": "Portrait of the Muazzin",
+      "imageUrl": "https://picsum.photos/seed/muazzin1/200/200",
+      "imageHint": "muslim man"
+    },
+    {
+      "id": "trustee1",
+      "description": "Portrait of a trusty member",
+      "imageUrl": "https://picsum.photos/seed/trustee1/200/200",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "trustee2",
+      "description": "Portrait of a trusty member",
+      "imageUrl": "https://picsum.photos/seed/trustee2/200/200",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "trustee3",
+      "description": "Portrait of a trusty member",
+      "imageUrl": "https://picsum.photos/seed/trustee3/200/200",
+      "imageHint": "portrait elder"
+    },
+    {
+      "id": "trustee4",
+      "description": "Portrait of a trusty member",
+      "imageUrl": "https://picsum.photos/seed/trustee4/200/200",
+      "imageHint": "portrait smiling"
+    },
+    {
+      "id": "event1",
+      "description": "A speaker giving a sermon",
+      "imageUrl": "https://picsum.photos/seed/event1/600/400",
+      "imageHint": "islamic lecture"
+    },
+    {
+      "id": "event2",
+      "description": "People reading the Quran together",
+      "imageUrl": "https://picsum.photos/seed/event2/600/400",
+      "imageHint": "reading quran"
+    },
+    {
+      "id": "event3",
+      "description": "Group of young people in a discussion circle",
+      "imageUrl": "https://picsum.photos/seed/event3/600/400",
+      "imageHint": "youth group"
+    },
+    {
+      "id": "sermon1",
+      "description": "A microphone in a mosque",
+      "imageUrl": "https://picsum.photos/seed/sermon1/600/400",
+      "imageHint": "sermon microphone"
+    },
+    {
+      "id": "sermon2",
+      "description": "An open Quran on a stand",
+      "imageUrl": "https://picsum.photos/seed/sermon2/600/400",
+      "imageHint": "quran stand"
+    },
+    {
+      "id": "sermon3",
+      "description": "An audio mixing board",
+      "imageUrl": "https://picsum.photos/seed/sermon3/600/400",
+      "imageHint": "audio mixer"
+    }
+  ]
+}
