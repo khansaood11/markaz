@@ -1,4 +1,3 @@
-
 import { getAdminDb } from '@/lib/firebase/admin';
 import { NextResponse } from 'next/server';
 
@@ -13,10 +12,11 @@ export async function GET() {
 
     if (!docSnap.exists) {
       const errorResponse = { error: 'Widget data not found. Please run the cron job first.' };
-      return new Response(JSON.stringify(errorResponse), {
+      return new NextResponse(JSON.stringify(errorResponse), {
         status: 404,
         headers: {
           'Content-Type': 'application/json',
+          'Cache-Control': 'no-store, no-cache, must-revalidate, must-understand',
         },
       });
     }
@@ -24,13 +24,15 @@ export async function GET() {
     const data = docSnap.data();
 
     // Manually create a JSON response to ensure correct headers and format
-    return new Response(JSON.stringify(data), {
+    // This is the most robust way to ensure the client receives valid JSON
+    return new NextResponse(JSON.stringify(data), {
         status: 200,
         headers: {
-          'Content-Type': 'application/json',
-          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+          'Content-Type': 'application/json; charset=utf-8',
+          'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, must-understand',
           'Pragma': 'no-cache',
           'Expires': '0',
+          'Content-Disposition': 'inline; filename="clock.json"',
         },
     });
     
@@ -43,10 +45,11 @@ export async function GET() {
       hijriDate: 'Error',
       error: error.message,
     };
-    return new Response(JSON.stringify(errorResponse), {
+    return new NextResponse(JSON.stringify(errorResponse), {
       status: 500,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; charset=utf-8',
+        'Cache-Control': 'no-store, no-cache, must-revalidate, must-understand',
       },
     });
   }
