@@ -1,0 +1,19 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow public read access to site data, but restrict writes.
+    match /siteData/{document} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Allow authenticated users (admins) to write to prayer requests.
+    // Disallow reads for privacy.
+    match /prayerRequests/{document} {
+      allow read: if false;
+      allow create: if request.auth != null;
+    }
+  }
+}
